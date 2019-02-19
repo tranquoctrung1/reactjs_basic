@@ -1,9 +1,13 @@
+/* eslint-disable react/jsx-pascal-case */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.sass';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import MiniApp from './MiniApp';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import App2 from './App2';
+
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
@@ -12,5 +16,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
 
-ReactDOM.render(<MiniApp />, document.getElementById('root2'))
+ReactDOM.render(<App2/>,document.getElementById('root2'));
+
+
 serviceWorker.unregister();
