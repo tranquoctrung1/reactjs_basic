@@ -4,6 +4,7 @@ a.nav-link
     text-align: center
     padding-top: 10px
     color: white !important
+    transition: .5s all ease-in-out
     span 
         position: relative
         padding: .5rem
@@ -29,3 +30,18 @@ a.nav-link
             width: 10px
             bottom: 0
             right: 0
+        
+
+@media only screen and (max-width: 320px) 
+    .navbar-toggler
+        transform: translateX(200%)
+
+@media only screen and(min-width: 1024px )
+    a.nav-link
+        &:hover
+            padding-top: 25px
+            span 
+                background: #95a5a6
+                color: black
+                &:before, &:after
+                    background: #95a5a6
